@@ -17,11 +17,9 @@ export default class DatabaseInit {
             `DROP TABLE IF EXISTS gato;`,
             `DROP TABLE IF EXISTS cachorro;`,
 
-            `create table if not exists animal (
+            `CREATE TABLE IF NOT EXISTS animal (
             id integer primary key autoincrement,
-            nome text,
-         
-            );`,
+            nome text );`,
             `create table if not exists gato (
             id integer primary key autoincrement,
             nome text,
